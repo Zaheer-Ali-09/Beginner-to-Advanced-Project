@@ -115,3 +115,20 @@ header .barIcon {
         border-radius: 10%;
     }
 }
+
+/* about-section */
+.about-section {
+    width: 100%;
+    
+    padding: 15px 80px;
+    text-align: justify;
+
+    /* padding: 20px 50px; */
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 150px 30px;
+
+    }
+}
