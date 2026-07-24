@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Weather App</h2>
+    <div class="main">
+        <input type="text" id="cityInput" placeholder="Enter Your City">
+        <button id="clickBtn">Click Me</button>
+    </div>
+    <div class="weather-info">
+        <h2 id="cityName">Karachi</h2>
+        <div class="temp" id="temperature">32°C</div>
+        <div class="condition" id="condition">Cloudy</div>
+    </div>
+
+    <script>
+        const apiKey = "677f3105305a191a161bc387ccaf6393";
+
+        const cityInput = document.getElementById("cityInput");
+        const clickBtn = document.getElementById("clickBtn");
+
+        const cityName = document.getElementById("cityName");
+        const temperature = document.getElementById("temperature");
+        const condition = document.getElementById("condition");
+
+
+        async function getWeather() {
+
+            const city = cityInput.value;
+
+            const apiUrl =
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            const response = await fetch(apiUrl);
+
+            const data = await response.json();
+
+            console.log(data);
+
+            cityName.innerHTML = data.name;
+            temperature.innerHTML = data.main.temp + "°C";
+            condition.innerHTML = data.weather[0].main;
+
+        }
+
+        clickBtn.addEventListener("click", getWeather);
+    </script>
+</body>
+
+</html>

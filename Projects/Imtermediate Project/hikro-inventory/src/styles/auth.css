@@ -1,0 +1,72 @@
+.auth-bg {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+}
+
+.auth-card {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    color: white;
+    text-align: center;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.pass-box {
+    position: relative;
+}
+
+.pass-box span {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+
+/* BUTTON */
+.auth-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/* PASSWORD BAR */
+.strength div {
+    height: 6px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.red {
+    width: 30%;
+    background: red;
+}
+
+.orange {
+    width: 60%;
+    background: orange;
+}
+
+.green {
+    width: 100%;
+    background: green;
+}
