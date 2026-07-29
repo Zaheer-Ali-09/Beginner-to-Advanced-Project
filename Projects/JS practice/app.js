@@ -1,30 +1,30 @@
-console.log("Hello JS Practice");
+// console.log("Hello JS Practice");
 
 // variable aik container ha jis me data store hoti ha 
 // let var and const 
 // _______________________________________
 // let /// block scope ha
-let name = "Zaheer Ali";
+// let name = "Zaheer Ali";
 
-name = "ali";
+// name = "ali";
 
-name = "Hashir";
+// name = "Hashir";
 
-name = "Done ✅"
+// name = "Done ✅"
 
-console.log(name);
+// console.log(name);
 // _______________________________________
 // var // var block scope
-var age = 18;
+// var age = 18;
 
-age = "19";
+// age = "19";
 
-age = "21";
+// age = "21";
 
 //  age= "Done ✅"
 
-console.log(age);
-const city = "Karachi";
+// console.log(age);
+// const city = "Karachi";
 
 // city = "Sukkur";
 
@@ -32,9 +32,20 @@ const city = "Karachi";
 
 //  city= "Done ✅"
 
-console.log(city);
+// console.log(city);
+
+// ________________________________
 
 
 
+let input = document.getElementById("input");
+let para = document.getElementById("para");
 
+function user() {
 
+    if (input.value.trim() === "") {
+        para.innerHTML = "Enter Your name";
+    } else {
+        para.innerHTML = "Hello " + input.value;
+    }
+}
