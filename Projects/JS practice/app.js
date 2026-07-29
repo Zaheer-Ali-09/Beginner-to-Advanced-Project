@@ -38,14 +38,29 @@
 
 
 
+// let input = document.getElementById("input");
+// let para = document.getElementById("para");
+
+// function user() {
+
+//     if (input.value.trim() === "") {
+//         para.innerHTML = "Enter Your name";
+//     } else {
+//         para.innerHTML = "Hello " + input.value;
+//     }
+// }
+
+
+// _________________________Practice
 let input = document.getElementById("input");
-let para = document.getElementById("para");
+let output = document.getElementById("output");
 
-function user() {
-
-    if (input.value.trim() === "") {
-        para.innerHTML = "Enter Your name";
+function multipalication() {
+    if (input.value === "") {
+        output.innerHTML = "Please Enter Your Number ❌";
     } else {
-        para.innerHTML = "Hello " + input.value;
+        let result = Number(input.value) * 2;
+        output.innerHTML = "Anwer Done =  ✅" + result 
     }
 }
+
