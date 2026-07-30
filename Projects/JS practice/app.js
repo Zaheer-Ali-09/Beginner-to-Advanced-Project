@@ -68,13 +68,20 @@
 
 
 // ----------------------------------------percentage
-let english = 80;
-let islamic = 55;
-let computer = 60;
+let english = 70;
+let islamic = 10;
+let computer = 90;
 let coding = 60;
 
 let totalmarks = english + islamic + computer + coding;
 let Obtained = 400;
 let result = totalmarks / Obtained * 100;
 console.log(result + "%");
+
+
+if (result >= 60) {
+    console.log("A");
+}else{
+    console.log("fail");
+}
 
