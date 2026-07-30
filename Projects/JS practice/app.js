@@ -52,15 +52,29 @@
 
 
 // _________________________Practice
-let input = document.getElementById("input");
-let output = document.getElementById("output");
+// let input = document.getElementById("input");
+// let output = document.getElementById("output");
 
-function multipalication() {
-    if (input.value === "") {
-        output.innerHTML = "Please Enter Your Number ❌";
-    } else {
-        let result = Number(input.value) * 2;
-        output.innerHTML = "Anwer Done =  ✅" + result 
-    }
-}
+// function multipalication() {
+//     if (input.value === "") {
+//         output.innerHTML = "Please Enter Your Number ❌";
+//     } else {
+//         let result = Number(input.value) * 2;
+//         output.innerHTML = "Anwer Done =  ✅" + result 
+//     }
+// }
+
+
+
+
+// ----------------------------------------percentage
+let english = 80;
+let islamic = 55;
+let computer = 60;
+let coding = 60;
+
+let totalmarks = english + islamic + computer + coding;
+let Obtained = 400;
+let result = totalmarks / Obtained * 100;
+console.log(result + "%");
 
